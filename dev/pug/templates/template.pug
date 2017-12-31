@@ -1,3 +1,6 @@
+block config
+    include ../config/config
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -10,6 +13,34 @@ html(lang="en")
         script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous")
-        title Albun
+        title #{pageTitle} | #{siteTitle}
     body
+        header(class="main-header")
+          img(class="logo" src="./img/logo.png")
+          div(class="contact-widget")
+              div(class="contact-widget__icon icon-call button button--dark")
+              div(class="contact-widget__data")
+                  h3(class="contact-widget__title") Call now
+                  p(class="contact-widget__content") 926-789-224
+          div(class="contact-widget")
+              div(class="contact-widget__icon icon-location location button button--dark")
+              div(class="contact-widget__data")
+                  h3(class="contact-widget__title") Our Location
+                  p(class="contact-widget__content") Calle los Cantaros 435 Lima-Peru
+          a(href="#" class="donate button button--dark") Donate now
+        nav(class="main-nav")
+          ul(class="main-menu")
+              li(class="main-menu__item")
+                a(href="./") Home
+              li(class="main-menu__item")
+                a(href="./albunes.html") Albunes
+              li(class="main-menu__item")
+                  a(href="./acercaDe.html") Nosotros
+              li(class="main-menu__item")
+                  a(href="./contactanos.html") Contactos
+          div(class="social-networks")
+              a(class="icon-facebook" href="https://www.facebook.com")
+              a(class="icon-twitter" href="https://twitter.com")
+              a(class="icon-instagram" href="https://www.instagram.com")
+              a(class="icon-youtube" href="https://www.youtube.com")
         block main
