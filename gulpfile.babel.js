@@ -53,7 +53,7 @@ gulp.src('./dev/js/*.js')
 );
 
 gulp.task('sass',() =>
-gulp.src('./dev/sass/style.scss')
+gulp.src('./dev/sass/*.scss')
     .pipe(plumer())
     //.pipe(autoprefixer())
     .pipe(sass({includePaths: ['scss']}))
