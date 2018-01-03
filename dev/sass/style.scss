@@ -8,6 +8,13 @@ $tercer-color:#F3F5F7;
 $cuarto-color:#111111;
 $quinto-color:#984923;
 $fondo : #F3F5F7;
+
+// tamaños de fuentes
+
+$fond-1:'Open Sans', sans-serif;
+$fond-2:'Roboto', sans-serif;
+$font-3:'Raleway', sans-serif;
+$font-4:'Indie Flower', cursive;
 body{
-  background: $fondo;
+  background-color: $fondo;
 }
