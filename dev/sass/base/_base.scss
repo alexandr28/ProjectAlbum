@@ -1,0 +1,14 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-size: $medium;
+  font-family: 'Roboto Slab', serif;
+}
+img{
+  max-width: 100%;
+}

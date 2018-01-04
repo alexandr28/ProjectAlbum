@@ -2,7 +2,7 @@
 
 
 // paleta de colores
-$primary-color:#3B60C5;
+$primary-color: hsl(205,100,65);
 $second-color:#00DB64;
 $tercer-color:#F3F5F7;
 $cuarto-color:#111111;
@@ -10,11 +10,27 @@ $quinto-color:#984923;
 $fondo : #F3F5F7;
 
 // tamaños de fuentes
+$medium: 16px;
+$xlarge: $medium * 1.5;
+$large: $medium * 1.25;
+$small: $medium * 0.8;
+$xsmall: $medium * 0.7;
 
 $fond-1:'Open Sans', sans-serif;
 $fond-2:'Roboto', sans-serif;
 $font-3:'Raleway', sans-serif;
 $font-4:'Indie Flower', cursive;
-body{
-  background-color: $fondo;
-}
+
+// variables layout
+$gutter: 16px;
+$max-width: 1200px;
+
+
+@import "librerias/normalize";
+@import "layout/layout";
+@import "theme/header";
+@import "module/modules";
+@import "base/base";
+@import "theme/menu";
+@import "theme/banner";
+
