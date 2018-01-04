@@ -17,16 +17,16 @@ html(lang="en")
              img(class="logo" src="./img/logo.png")
           div(class="main-header-2")
              div(class="contact-widget")
-                 div(class="contact-widget__icon icon-call button button--dark button--square")
+                 a(href="#" class="contact-widget__icon icon-call button button--dark button--square")
                  div(class="contact-widget__data")
                      h3(class="contact-widget__title") Call now
                      p(class="contact-widget__content") 926-789-224
              div(class="contact-widget")
-                 div(class="contact-widget__icon icon-pin location button button--dark button--square")
+                 a(href="#" class="contact-widget__icon icon-pin location button button--dark button--square")
                  div(class="contact-widget__data")
                      h3(class="contact-widget__title") Our Location
                      p(class="contact-widget__content") Calle los Cantaros 435 Lima-Peru
-             a(href="#" class="donate button button--dark") Donate now
+             a(href="#" class="donate button button--green") Donate now
         div(id="toggle-menu" class="icon-bars toggle-menu")
         nav(class="main-nav main-container" id="nav")
           ul(class="main-menu")
@@ -53,3 +53,4 @@ html(lang="en")
                 a(href="#" class="main-banner__button button button--cta") Donate now
         block main
         script(src="./js/eventos.js")
+        script(src="./js/lightbox.js")

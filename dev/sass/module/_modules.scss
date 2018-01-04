@@ -49,6 +49,10 @@
   &--square{
     padding: 0;
   }
+  &--green{
+    background: $second-color;
+    color: $tercer-color;
+  }
 }
 
 .social-networks{
