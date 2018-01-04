@@ -25,7 +25,6 @@ $font-4:'Indie Flower', cursive;
 $gutter: 16px;
 $max-width: 1200px;
 
-
 @import "librerias/normalize";
 @import "layout/layout";
 @import "theme/header";
@@ -33,4 +32,6 @@ $max-width: 1200px;
 @import "base/base";
 @import "theme/menu";
 @import "theme/banner";
+
+
 
