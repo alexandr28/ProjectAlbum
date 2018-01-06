@@ -7,12 +7,12 @@ append config
 block main
     div(class="main-album main-container")
         h1(class="main-album__title") Albunes Paisajes
-        .gallery-container
-            - var n= 1
+        .gallery-container#gallery-container
+            - var n = 1
             while n <= 16
                 .gallery-item
-                    img(src="./img/albun/img-"+n+"-min.jpg" alt="Descripcion"+n)
-                 -n++
+                    img(src="./img/albun/img-"+ n +"-min.jpg" alt="Descripcion"+ n).gallery-img
+                -n++
 
 
-    script(src="./js/lightbox.js")
+    script(src='./js/lightbox.js')
